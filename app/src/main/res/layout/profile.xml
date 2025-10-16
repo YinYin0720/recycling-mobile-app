@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		tools:context=".activity.ProfileActivity">
+	
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/apple_green"
+			android:orientation="horizontal">
+		
+				<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+					
+					<TextView
+							android:id="@+id/redeemNameList"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginHorizontal="20dp"
+							android:layout_marginVertical="10dp"
+							android:fontFamily="@font/playfair_display_black"
+							android:text="Profile"
+							android:textAllCaps="false"
+							android:textColor="@color/white"
+							android:layout_weight="1"
+							android:textSize="30dp" />
+					
+					<ImageView
+							android:id="@+id/logoutBtn"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:scaleType="fitCenter"
+							android:padding="10dp"
+							android:layout_alignParentRight="true"
+							android:layout_weight="2"
+							android:layout_centerVertical="true"
+							app:srcCompat="@drawable/ic_baseline_logout_24"
+							app:tint="@color/white" />
+				</RelativeLayout>
+	
+	</LinearLayout>
+	
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="vertical">
+		
+		
+		<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scrollbarStyle="insideOverlay"
+				android:scrollbars="vertical">
+			
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginHorizontal="50dp"
+					android:orientation="vertical">
+				
+				
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:layout_marginBottom="10dp">
+					
+					<ImageView
+							android:id="@+id/profileImg"
+							android:layout_width="match_parent"
+							android:layout_height="150dp"
+							android:layout_gravity="center"
+							android:layout_marginVertical="20dp"
+							android:layout_weight="1"
+							app:srcCompat="@drawable/tree1" />
+					
+					
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:gravity="center"
+							android:layout_gravity="center"
+							android:orientation="vertical">
+						
+						<TextView
+								android:id="@+id/textView2"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:fontFamily="@font/playfair_display_black"
+								android:text="Username"
+								android:textSize="16sp"
+								android:layout_weight="1"
+								android:textStyle="bold" />
+						
+						<TextView
+								android:id="@+id/profileUname"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:fontFamily="@font/inder"
+								android:text="'NameHere'"
+								android:textColor="@color/black"
+								android:layout_weight="1"
+								android:textSize="24dp" />
+					
+					</LinearLayout>
+				</LinearLayout>
+				
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_gravity="center"
+						android:orientation="horizontal">
+					
+					<LinearLayout
+							
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:layout_gravity="center"
+							android:background="@drawable/bg_list"
+							android:orientation="horizontal">
+						
+						
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:layout_weight="1"
+								android:layout_marginVertical="10dp"
+								android:orientation="vertical">
+							
+							<ImageView
+									android:id="@+id/redeemPointsBtn"
+									android:layout_width="match_parent"
+									android:layout_height="40sp"
+									android:scaleType="fitCenter"
+									android:layout_gravity="center"
+									android:src="@drawable/ic_baseline_card_giftcard_24"
+									android:layout_weight="1"
+									app:tint="@color/dark_green" />
+							
+							<TextView
+									android:id="@+id/textView3"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:gravity="center"
+									android:fontFamily="@font/playfair_display_black"
+									android:paddingVertical="5dp"
+									android:layout_weight="4"
+									android:textSize="15dp"
+									android:text="Redeem Points" />
+						
+						</LinearLayout>
+						
+						<LinearLayout
+								android:layout_width="3dp"
+								android:layout_height="match_parent"
+								android:layout_marginVertical="10dp"
+								android:layout_gravity="center"
+								android:background="@color/dark_green"
+								android:orientation="vertical"></LinearLayout>
+						
+						<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_weight="1"
+								android:layout_gravity="center"
+								android:orientation="vertical">
+							
+							<ImageView
+									android:id="@+id/myRewardBtn"
+									android:layout_width="match_parent"
+									android:layout_height="40sp"
+									app:srcCompat="@drawable/ic_baseline_stars_24"
+									app:tint="@color/dark_green" />
+							
+							<TextView
+									android:id="@+id/textView4"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:gravity="center"
+									android:fontFamily="@font/playfair_display_black"
+									android:paddingVertical="5dp"
+									android:layout_weight="4"
+									android:textSize="15dp"
+									android:text="My Rewards" />
+						
+						</LinearLayout>
+					
+					</LinearLayout>
+				
+				
+				</LinearLayout>
+				
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_marginTop="10dp"
+						android:orientation="vertical">
+					
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:orientation="vertical">
+						
+						<TextView
+								android:id="@+id/textView5"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="5dp"
+								android:fontFamily="@font/playfair_display_black"
+								android:text="Email"
+								android:textSize="16sp"
+								android:textStyle="bold" />
+						
+						<TextView
+								android:id="@+id/profileEmail"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="5dp"
+								android:fontFamily="@font/inder"
+								android:text="'EmailHere'"
+								android:textColor="@color/black"
+								android:textSize="22dp" />
+					</LinearLayout>
+					
+					<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:orientation="vertical">
+						
+						<TextView
+								android:id="@+id/textView6"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="5dp"
+								android:fontFamily="@font/playfair_display_black"
+								android:text="Phone Number"
+								android:textSize="16sp"
+								android:textStyle="bold" />
+						
+						<TextView
+								android:id="@+id/profilePhone"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="5dp"
+								android:fontFamily="@font/inder"
+								android:text="'PhoneNoHere'"
+								android:textColor="@color/black"
+								android:textSize="22dp" />
+					</LinearLayout>
+				
+				</LinearLayout>
+				
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_marginVertical="20dp"
+						android:layout_marginHorizontal="40dp"
+						android:orientation="vertical">
+					
+					<Button
+							android:id="@+id/btn_addresses"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center"
+							android:background="@drawable/bg_button"
+							android:text="Saved Addresses"
+							android:textAlignment="center"
+							android:textColor="@color/white"
+							android:textColorHighlight="@color/white"
+							android:textSize="13dp"
+							android:layout_marginVertical="5dp"
+							android:textStyle="bold" />
+					
+					<Button
+							android:id="@+id/editBtn"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center"
+							android:background="@drawable/bg_button"
+							android:text="EDIT PROFILE"
+							android:textAlignment="center"
+							android:textColor="@color/white"
+							android:textColorHighlight="@color/white"
+							android:layout_marginVertical="5dp"
+							android:textSize="13dp"
+							android:textStyle="bold" />
+					
+					<Button
+							android:id="@+id/aboutBtn"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center"
+							android:background="@drawable/bg_button"
+							android:text="ABOUT E-CYNIC"
+							android:textAlignment="center"
+							android:textColor="@color/white"
+							android:textColorHighlight="@color/white"
+							android:textSize="13dp"
+							android:layout_marginVertical="5dp"
+							android:textStyle="bold" />
+				
+				</LinearLayout>
+			
+			</LinearLayout>
+		
+		</ScrollView>
+	</LinearLayout>
+	
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+			android:id="@+id/btmNav"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="1dp"
+			android:background="@color/apple_green"
+			app:itemIconTint="@drawable/tab_color"
+			app:itemTextColor="@drawable/tab_color"
+			app:labelVisibilityMode="labeled"
+			app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>

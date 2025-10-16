@@ -1,0 +1,88 @@
+<resources>
+	<!-- API KEY -->
+	<string name="api_key">AIzaSyDOw8UekB3pqj3hp1pUuGnLSuVPpYWn4Aw</string>
+	<integer name="google_play_services_version">12451000</integer>
+	
+	<string name="app_name">E-Cynic</string>
+	<string name="title_activity_bottom_nav">BottomNav</string>
+	<string name="title_home">Home</string>
+	<string name="title_dashboard">Dashboard</string>
+	<string name="title_notifications">Notifications</string>
+	<string name="title_activity_bottom_navigation">BottomNavigation</string>
+	<!-- Strings related to login -->
+	<string name="prompt_email">Email</string>
+	<string name="prompt_password">Password</string>
+	<string name="action_sign_in">Sign in or register</string>
+	<string name="action_sign_in_short">Sign in</string>
+	<string name="welcome">"Welcome!"</string>
+	<string name="invalid_username">Not a valid username</string>
+	<string name="invalid_password">Password must be >5 characters</string>
+	<string name="login_failed">"Login failed"</string>
+	<!-- Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="underlineFgtPwd"><u>Forgot your password?</u></string>
+	<string name="upload_item_image">Item Image</string>
+	<string name="pin_your_location">Pin Your Location</string>
+	<string name="enter_type_of_items">Enter type of items</string>
+	
+	<string-array name="state">
+		<item>Johor</item>
+		<item>Kedah</item>
+		<item>Kelantan</item>
+		<item>Malacca</item>
+		<item>Negeri Sembilan</item>
+		<item>Pahang</item>
+		<item>Penang</item>
+		<item>Perak</item>
+		<item>Perlis</item>
+		<item>Sabah</item>
+		<item>Sarawak</item>
+		<item>Selangor</item>
+		<item>Terengganu</item>
+		<item>Kuala Lumpur</item>
+		<item>Labuan</item>
+		<item>Putrajaya</item>
+	</string-array>
+	
+	<string-array name="Articles">
+		<item>What is E-waste?</item>
+		<item>E-Waste Management in Malaysia</item>
+		<item>Effects of Electronic Waste Pollution</item>
+		<item>7 Ways To Safely Manage And Recycle E-Waste</item>
+		<item>Global E-Waste Up 21% in 5 Years</item>
+		<item>5 Benefits of Recycling E-Waste</item>
+	</string-array>
+	
+	<string-array name="A_description">
+		<item>E-waste is electronic products that are unwanted, not working, and nearing or at the end of their “useful life.” Computers, televisions, VCRs, stereos, copiers, and fax machines....</item>
+		<item>Waste not, want not; this is the typical question that runs through everyone’s mind to get rid of the household appliances they no longer use. Throwing them away senselessly may not....</item>
+		<item>The main issue of disposing of computers and other electronics is that they contain toxic materials such as lead, zinc, nickel, flame retardants, barium, and chromium. When electronic waste is dumped into landfills, ....</item>
+		<item>Below are a few, simple ways businesses can start reducing their electronic waste immediately....</item>
+		<item>Each year, the total amount of electric and electronic equipment the world uses grows by 2.5 million tonnes. Phones, radios, toys, laptops – if it has a power or battery supply it’s likely to join a growing mountain of “e-waste” after use.</item>
+		<item>E-waste can be anything that is no longer needed and plugs into a power point or runs on batteries, including old televisions, refrigerators, lighting and even hearing aids. Here are five advantages of recycling e-waste: ....</item>
+	</string-array>
+	
+	<string-array name="A_link">
+		<item>https://www.ewaste1.com/what-is-e-waste/</item>
+		<item>https://www.iproperty.com.my/lifestyle/ewaste-recycling-in-malaysia/</item>
+		<item>https://www.ewaste1.com/effects-of-electronic-waste-pollution/</item>
+		<item>https://www.roadrunnerwm.com/blog/recycle-e-waste</item>
+		<item>https://theconversation.com/global-electronic-waste-up-21-in-five-years-and-recycling-isnt-keeping-up-141997</item>
+		<item>https://ecocycle.com.au/lighting-and-electrical/5-benefits-of-recycling-e-waste/</item>
+	</string-array>
+	
+	<string-array name="sortListEg">
+		<item>Newest</item>
+		<item>Oldest</item>
+	</string-array>
+	
+	<string-array name="itemsSelection">
+		<item>Computer, Mobile &amp; Accessories</item>
+		<item>Household Cleaning Machines</item>
+		<item>Kitchen Appliances</item>
+		<item>TVs &amp; Accessories</item>
+		<item>Other Electronic Devices</item>
+	</string-array>
+
+
+</resources>

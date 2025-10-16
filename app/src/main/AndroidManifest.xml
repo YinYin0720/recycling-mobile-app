@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="com.example.e_cynic">
+	
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	
+	<application
+			android:allowBackup="true"
+			android:icon="@drawable/logo_round"
+			android:label="@string/app_name"
+			android:roundIcon="@drawable/logo_round"
+			android:supportsRtl="true"
+			android:theme="@style/Theme.ECynic"
+			android:usesCleartextTraffic="true">
+		<activity
+				android:name=".activity.ViewUserAddress"
+				android:exported="true" />
+		<activity
+				android:name=".activity.EditUserAddressActivity"
+				android:exported="true" />
+		<activity
+				android:name=".activity.SelectAddressActivity"
+				android:exported="true" />
+		<activity
+				android:name=".activity.OrderDetailActivity"
+				android:exported="true" />
+		<activity
+				android:name=".activity.RewardHistoryActivity"
+				android:exported="false" />
+		
+		<meta-data
+				android:name="com.google.android.geo.API_KEY"
+				android:value="@string/api_key" />
+		<meta-data
+				android:name="com.google.android.gms.version"
+				android:value="@integer/google_play_services_version" />
+		
+		<activity
+				android:name=".activity.PinLocationActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.StartupActivity"
+				android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+				android:name=".activity.QuizResultActivity"
+				android:exported="false"
+				android:label="Quiz" />
+		<activity
+				android:name=".activity.RedeemPointsActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.PlayQuizActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.QuizActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.EditProfileActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.ElectronicAppliancesExampleActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.AboutActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.AppInfoActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.ForgotPasswordActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.SignUpActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.RecycleActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.ProfileActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.HistoryActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.HomeActivity"
+				android:exported="false" />
+		<activity
+				android:name=".activity.LoginActivity"
+				android:exported="true" />
+	</application>
+
+</manifest>

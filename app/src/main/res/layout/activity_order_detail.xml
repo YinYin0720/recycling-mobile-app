@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		tools:context=".activity.OrderDetailActivity">
+	
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+		
+		
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="80dp"
+				android:gravity="center"
+				android:orientation="horizontal">
+			
+			
+			<ImageView
+					android:id="@+id/backBtn"
+					android:layout_width="75dp"
+					android:layout_height="75dp"
+					app:tint="@color/apple_green"
+					app:srcCompat="@drawable/ic_baseline_arrow_circle_left_24"
+					android:layout_weight="1" />
+			
+			<TextView
+					android:id="@+id/textView1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="7dp"
+					android:fontFamily="@font/playfair_display_black"
+					android:text="Recycle"
+					android:textAlignment="center"
+					android:textColor="#113716"
+					android:textSize="28sp"
+					android:textStyle="bold"
+					android:layout_weight="5" />
+		
+		</LinearLayout>
+		
+		<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+			
+			<LinearLayout
+					android:id="@+id/RL_orderDetails"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginHorizontal="10dp"
+					android:orientation="vertical">
+				
+				<TextView
+						android:id="@+id/tv_orderDetails"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="5dp"
+						android:fontFamily="@font/inder"
+						android:text="Order Details"
+						android:textColor="@color/black"
+						android:textSize="26sp"
+						android:textStyle="bold"
+						tools:ignore="InOrMmUsage" />
+				
+				<FrameLayout
+						android:id="@+id/splitline"
+						android:layout_width="match_parent"
+						android:layout_height="5dp"
+						android:layout_below="@+id/tv_orderDetails"
+						android:layout_centerInParent="true"
+						android:background="@color/dark_green" />
+				
+				<androidx.recyclerview.widget.RecyclerView
+						android:id="@+id/rv_itemList"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_below="@+id/splitline"
+						android:layout_marginHorizontal="5dp"
+						android:layout_centerInParent="true" />
+				
+				<!--total device-->
+				<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_alignBottom="@+id/rv_itemList"
+						android:background="@color/grey"
+						android:padding="5dp"
+						android:layout_marginVertical="10dp"
+						android:orientation="vertical">
+					
+					<LinearLayout
+							android:id="@+id/LL_numofdvc"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/rv_itemList"
+							android:layout_margin="5dp"
+							android:orientation="horizontal">
+						
+						<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:fontFamily="@font/inder"
+								android:text="Total number of devices: "
+								android:textColor="@color/black"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:gravity="center_vertical"
+								android:layout_weight="3" />
+						
+						<TextView
+								android:id="@+id/noOfDevice"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:hint="#device"
+								android:textSize="20sp"
+								android:gravity="center_vertical"
+								android:layout_weight="7" />
+					</LinearLayout>
+					
+					<LinearLayout
+							android:id="@+id/LR_address"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_margin="5dp">
+						
+						<TextView
+								android:id="@+id/address"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:gravity="center_vertical"
+								android:layout_weight="3"
+								android:fontFamily="@font/inder"
+								android:text="Address:  "
+								android:textColor="@color/black"
+								android:textSize="14sp"
+								android:textStyle="bold" />
+						
+						<TextView
+								android:id="@+id/pinnedAddress"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_weight="1"
+								android:background="@drawable/border_light"
+								android:gravity="center_vertical"
+								android:hint="Address of pin location"
+								android:padding="5dp"
+								android:textSize="18sp" />
+					
+					</LinearLayout>
+					
+					<LinearLayout
+							android:id="@+id/LR_earnedPoint"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_margin="8dp"
+							android:orientation="horizontal">
+						
+						<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:fontFamily="@font/inder"
+								android:text="Earned Point: "
+								android:textColor="@color/black"
+								android:textSize="14sp"
+								android:layout_weight="1.5"
+								android:gravity="center_vertical"
+								android:textStyle="bold" />
+						
+						<TextView
+								android:id="@+id/point"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_gravity="center_horizontal"
+								android:fontFamily="@font/inder"
+								android:hint="100 points/ To Be Confirmed"
+								android:textColor="@color/black"
+								android:textSize="18sp"
+								android:layout_weight="1"
+								android:gravity="center_vertical"
+								android:textStyle="bold" />
+					
+					</LinearLayout>
+					
+					<LinearLayout
+							android:id="@+id/LR_orderStatus"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_margin="5dp"
+							android:orientation="horizontal">
+						
+						<TextView
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_gravity="center"
+								android:fontFamily="@font/inder"
+								android:text="Order Status: "
+								android:textColor="@color/black"
+								android:textSize="14sp"
+								android:textStyle="bold"
+								android:layout_weight="1.5" />
+						
+						<TextView
+								android:id="@+id/status"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:layout_gravity="center_horizontal"
+								android:fontFamily="@font/inder"
+								android:hint="progress/ confirm / received"
+								android:textColor="@color/black"
+								android:textSize="18sp"
+								android:textStyle="bold"
+								android:layout_weight="1" />
+					
+					</LinearLayout>
+				</LinearLayout>
+				
+				
+				<LinearLayout
+						android:id="@+id/ThankyouMessage"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:background="@drawable/border_with_gradient"
+						android:orientation="vertical"
+						android:padding="15dp"
+						android:layout_marginVertical="10dp"
+						android:layout_marginBottom="50dp">
+					
+					<TextView
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center"
+							android:fontFamily="@font/playfair_display_black"
+							android:gravity="center"
+							android:padding="2dp"
+							android:text="- Thanks for Your Support -"
+							android:textColor="@color/dark_green"
+							android:textSize="27dp" />
+				
+				</LinearLayout>
+				
+			</LinearLayout>
+		
+		</ScrollView>
+	
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:orientation="vertical"
+		android:layout_margin="10dp"
+		tools:context=".activity.EditUserAddressActivity">
+	
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal">
+		
+		
+		<ImageView
+				android:id="@+id/backBtn"
+				android:layout_width="75dp"
+				android:layout_height="75dp"
+				app:tint="@color/apple_green"
+				app:srcCompat="@drawable/ic_baseline_arrow_circle_left_24"
+				android:layout_weight="1" />
+		
+		<TextView
+				android:id="@+id/textView1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/inder"
+				android:text="Edit Address"
+				android:textAlignment="center"
+				android:textColor="@color/black"
+				android:textSize="28sp"
+				android:textStyle="bold"
+				android:layout_weight="5" />
+	
+	</LinearLayout>
+	
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:layout_marginHorizontal="40dp"
+			android:orientation="vertical">
+		
+		<EditText
+				android:id="@+id/addressLine1"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:background="@drawable/bg_inputfield"
+				android:ems="10"
+				android:hint="Address line 1"
+				android:inputType="textPostalAddress"
+				android:paddingStart="10dp"
+				android:layout_marginVertical="5dp"
+				android:paddingEnd="10dp" />
+		
+		<EditText
+				android:id="@+id/addressLine2"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:background="@drawable/bg_inputfield"
+				android:ems="10"
+				android:hint="Address line 2"
+				android:inputType="textPostalAddress"
+				android:layout_marginVertical="5dp"
+				android:paddingHorizontal="10dp" />
+		
+		<EditText
+				android:id="@+id/addressLine3"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:background="@drawable/bg_inputfield"
+				android:ems="10"
+				android:hint="Address line 3"
+				android:inputType="textPostalAddress"
+				android:layout_marginVertical="5dp"
+				android:paddingHorizontal="10dp" />
+		
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:layout_marginVertical="5dp"
+				android:background="@drawable/bg_inputfield">
+			
+			<Spinner
+					android:id="@+id/state"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent" />
+		</RelativeLayout>
+		
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+			
+			<EditText
+					android:id="@+id/postcode"
+					android:layout_width="match_parent"
+					android:layout_height="30dp"
+					android:layout_gravity="center"
+					android:background="@drawable/bg_inputfield"
+					android:ems="10"
+					android:hint="Postcode"
+					android:inputType="number"
+					android:layout_weight="1"
+					android:layout_marginVertical="5dp"
+					android:layout_marginEnd="5dp"
+					android:paddingHorizontal="10dp" />
+			
+			<EditText
+					android:id="@+id/city"
+					android:layout_width="match_parent"
+					android:layout_height="30dp"
+					android:layout_gravity="center"
+					android:background="@drawable/bg_inputfield"
+					android:ems="10"
+					android:hint="City"
+					android:inputType="text"
+					android:layout_weight="1"
+					android:layout_marginHorizontal="5dp"
+					android:layout_marginStart="5dp"
+					android:paddingHorizontal="10dp" />
+		
+		</LinearLayout>
+		
+		<Button
+				android:id="@+id/btn_editAddress"
+				android:layout_width="250dp"
+				android:layout_height="50dp"
+				android:text="EDIT"
+				android:textSize="16dp"
+				android:textStyle="bold"
+				android:layout_marginVertical="70dp" />
+				
+	</LinearLayout>
+</LinearLayout>

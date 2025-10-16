@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		tools:context=".activity.HistoryActivity">
+	
+	
+	<FrameLayout
+			android:id="@+id/historyFrame"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/apple_green">
+		
+		<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="20dp"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:fontFamily="@font/playfair_display_black"
+				android:text="History"
+				android:textColor="@color/white"
+				android:textSize="28sp" />
+	</FrameLayout>
+	
+	<LinearLayout
+			android:id="@+id/LL_recycleHistory"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1">
+		
+		<FrameLayout
+				android:id="@+id/sortFrame"
+				android:layout_width="155dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right"
+				android:layout_margin="15dp"
+				android:layout_below="@id/historyFrame"
+				android:background="@drawable/border">
+			
+			<Spinner
+					android:id="@+id/sortOrders"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:minHeight="30dp" />
+		</FrameLayout>
+		
+		<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/sortFrame"
+				android:layout_marginBottom="?attr/actionBarSize">
+			
+			<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/historyRecyclerView"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginStart="10dp"
+					android:layout_marginTop="5dp"
+					android:layout_marginEnd="10dp"
+					android:layout_marginBottom="10dp"
+					android:layout_gravity="center"
+					android:padding="3dp"/>
+		</FrameLayout>
+	</LinearLayout>
+	
+	<LinearLayout
+			android:id="@+id/LL_noRecycleHistory"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_weight="1">
+		
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:orientation="vertical">
+			
+			<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="You have not recycle anything"
+					android:textAlignment="center"
+					android:textStyle="bold"
+					android:textSize="25dp" />
+			
+			<Button
+					android:id="@+id/btn_goRecycle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginVertical="10dp"
+					android:layout_marginHorizontal="80dp"
+					android:text="Go Recycle" />
+		</LinearLayout>
+	</LinearLayout>
+	
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+			android:id="@+id/btmNav"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/apple_green"
+			android:layout_gravity="bottom"
+			app:itemIconTint="@drawable/tab_color"
+			app:itemTextColor="@drawable/tab_color"
+			app:labelVisibilityMode="labeled"
+			app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
